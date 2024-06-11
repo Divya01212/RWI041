@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   
+   <bean class="com.springboot.Address" name="address"> 
+  <property name="rno" value="100"></property>
+   <property name="city" value="Indore"></property>
+    <property name="pincode" value="234567"></property>
+  
+  
+  </bean>
+  
+    <bean class="com.springboot.Employee" name="emp" autowire="byName">
+  <property name="eid" value="101"></property>
+  <property name="ename" value="vaishu"></property>
+  </bean>
+  
+  
+ 
+  
+
+</beans>
